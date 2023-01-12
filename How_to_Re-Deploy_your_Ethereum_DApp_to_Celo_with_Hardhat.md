@@ -111,10 +111,13 @@ Celo provides an ideal environment for deploying and running decentralized appli
 ## Next Step 
 Are you Interested in building, and deploying your Dapps on the Celo blockchain?
 Here are some resources you can start working on:
-[Redeploying your Dapp on Celo using truffle](https://learn.figment.io/tutorials/redeploy-ethereum-dapps-on-celo)
-[Creating a Crowdfunding contract on Celo](https://www.celosage.com/a-developers-guide-into-building-defi-and-nft-smart-contracts-on-celo/)
-[A Coffee Android app on Celo](https://www.celosage.com/buyme-a-coffee-android-app-using-the-celo-java-sdk/)
-[Build a Donation Dapp on Celo](https://www.celosage.com/build-a-donation-dapp-on-celo-to-award-your-favorite-content-creator/)
+[Redeploying your Dapp on Celo using truffle](https://learn.figment.io/tutorials/redeploy-ethereum-dapps-on-celo),
+
+[Creating a Crowdfunding contract on Celo](https://www.celosage.com/a-developers-guide-into-building-defi-and-nft-smart-contracts-on-celo/),
+
+[A Coffee Android app on Celo](https://www.celosage.com/buyme-a-coffee-android-app-using-the-celo-java-sdk/),
+
+[Build a Donation Dapp on Celo](https://www.celosage.com/build-a-donation-dapp-on-celo-to-award-your-favorite-content-creator/),
 
 
 ## About the Author
