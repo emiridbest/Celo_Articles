@@ -74,8 +74,12 @@ a. Click on the plug-like icon on the left bottom part of the screen.
 b. Enter `Celo` into the search bar to search for the Celo plugin. 
 
 c. Click `Activate` to add the celo plugin to the left plain, you will notice the Celo icon has been added to the plugins on the left, click on the Celo Icon.
- 
+
+ ![plugin_manager](https://user-images.githubusercontent.com/69092079/212204714-5f3fa3bb-5272-4264-924c-160aca12051e.jpg)
+
 3. Next, create a new file under the `contracts` directory, and name the file `MyToken`, where you will have your smart contract written.
+ 
+![files](https://user-images.githubusercontent.com/69092079/212204530-361d20dd-26cc-4c10-82ff-3ed8da469235.jpg)
 
 4. Copy and paste the following code below into your `MyToken` contract:
 
@@ -161,14 +165,21 @@ contract MyToken is ERC1155 {
 
 ***Note: Also ensure you are current on your celo alfajores testnet account on any wallet of your choice, and the account should already be funded with Celo testnet native token***.
 
-7. Next, Click on the compile button, and Remix should compile the contract without any errors
+7. Next, Click on the compile button, and Remix should compile the contract without any errors.
+ 
+![compile_token](https://user-images.githubusercontent.com/69092079/212204347-e4c85f7a-d80d-4940-acae-b0e16f213ea9.jpg)
 
 8. Now click on the deploy button below, and your wallet will pop up on the right side of your screen for you to sign the transaction.
 
+![deploy_myToken](https://user-images.githubusercontent.com/69092079/212204167-dd2f640e-3a5f-4a19-893f-a2bc1978afec.jpg)
+
 9. Click on confirm button, and you should have your contract already deployed to the celo alfajores testnet with the address of your contract on the display tab attached to the deploy button.
 
+![confirm_transaction](https://user-images.githubusercontent.com/69092079/212204036-797e125b-2208-4ea7-896c-8138e2c5aab7.jpg)
+
 ***Note: The NFTs minted will be signed to the address of the person that deployed the contract and called the function***.
-Now, that you have deployed your token contract with the minting function being called inside the contract’s constructor function. Your NFTs have automatically been minted to your address.
+
+10. Now, that you have deployed your token contract with the minting function being called inside the contract’s constructor function. Your NFTs have automatically been minted to your address.
 
 # Interacting with the Deployed ERC1155 Token
 Now that you have your newly minted ERC1155 token deployed and minted on Celo alfajores signed with your address. You can run some checks to interact with your token on the blockchain.
@@ -180,6 +191,8 @@ a. Click on the function call `balanceof` at the bottom left side of your screen
 b. You will notice two drop-down input tabs to add your connected wallet address and the token Id of the NFT you want to view its balance, Copy your connected wallet address and past it in the first field, and input `0` in the second tab to view the balance of the NFT.
 
 c. Click `Call` to view the amount of the `PHENZIC000` token available in your address.
+
+![remix_balance_Of](https://user-images.githubusercontent.com/69092079/212203772-c74c3837-1c29-446c-8b5a-4182ad287e9f.jpg)
 
 * Assuming you have a Gaming application where you welcome each new player by gifting them with the `PHENZIC000` token and gifting the old-timer player with certain levels attained in the game with the `PHENZIC001` token.
 You can have this done automatically on your Dapp but in this case, you can equally send these tokens by calling the `safeTransferFrom` function.
@@ -195,6 +208,8 @@ d. Enter the `id` of the token you want to send `0` or `1`, and the amount you w
 e. Click `transact`, and to check the balance of the remaining token.
 
 f. Head back to the `balanceof` add your connected wallet address and `0` or the `id` of the token you sent from, and click call. You will notice the reduction in the token amount.
+
+![functions](https://user-images.githubusercontent.com/69092079/212203499-48b25bcc-7366-4082-b55c-d48905447a76.jpg)
 
 * The `uri` function call overrides simple taken in a `token_id`, and returns the link to either the first minted NFT or the second minter NFT on IPFS, depending on the `token_id` you input.
 
