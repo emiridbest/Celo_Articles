@@ -47,13 +47,13 @@ By using ERC1155, both types of tokens can be created within the same contract. 
 In addition, ERC1155 also supports the creation of atomic swaps, which enable the exchange of multiple types of tokens without requiring a third-party intermediary. This is useful for creating decentralized marketplaces, allowing users to exchange tokens directly with each other.
 
 The ERC1155 are also relatively important in the following areas in the web3 space: 
- Non-Fungible Token (NFT) Marketplace: The ERC1155 token standard enables the creation of a marketplace for non-fungible tokens (NFTs). This allows users to tokenize digital assets such as art, music, videos, and gaming items and buy, sell, and trade them in a secure, trustless environment. This can be done directly or through smart contracts.
+1. Non-Fungible Token (NFT) Marketplace: The ERC1155 token standard enables the creation of a marketplace for non-fungible tokens (NFTs). This allows users to tokenize digital assets such as art, music, videos, and gaming items and buy, sell, and trade them in a secure, trustless environment. This can be done directly or through smart contracts.
 
- Decentralized Autonomous Organizations (DAOs): The ERC1155 token standard can be used to create decentralized autonomous organizations (DAOs) that can be used to govern the use of a particular token or project. This allows token holders to have a say in the direction of the project, and vote on important decisions. 
+2. Decentralized Autonomous Organizations (DAOs): The ERC1155 token standard can be used to create decentralized autonomous organizations (DAOs) that can be used to govern the use of a particular token or project. This allows token holders to have a say in the direction of the project, and vote on important decisions. 
 
- Gaming Platforms: The ERC1155 token standard can be used to create gaming platforms where users can purchase, trade, and use in-game items and assets. This allows users to partake in decentralized gaming experiences and create a secure environment for trading game items. 
+3. Gaming Platforms: The ERC1155 token standard can be used to create gaming platforms where users can purchase, trade, and use in-game items and assets. This allows users to partake in decentralized gaming experiences and create a secure environment for trading game items. 
 
- Tokenized Assets: The ERC1155 token standard can be used to tokenize real-world assets such as art, collectibles, gold, and other tangible items. This allows users to invest in these assets and trade them in a secure, trustless environment.
+4. Tokenized Assets: The ERC1155 token standard can be used to tokenize real-world assets such as art, collectibles, gold, and other tangible items. This allows users to invest in these assets and trade them in a secure, trustless environment.
 
 
 # Setting up Hardhat
@@ -467,9 +467,9 @@ contract ERC1155 is Context, ERC165, IERC1155, IERC1155MetadataURI {
 
 ***Note: Do not copy the code above into your contract file since you can import it directly from openzeppelin instead***.
 
-This code below is a Solidity contract for an ERC1155 token, that allows for fractional ownership of a digital asset. The code defines two constants, `PHENZIC000` and `PHENZIC001`, with each representing a type of token. It also includes a `constructor`, which is called when the contract is deployed. 
-In this constructor, the sender is given `200` `PHENZIC000` tokens and `100` `PHENZIC001` tokens. 
-Finally, the code includes a function, `uri()`, which returns a URI string for a given token ID. This URI string can be used to access the token's associated digital asset.
+* This code below is a Solidity contract for an ERC1155 token, that allows for fractional ownership of a digital asset. The code defines two constants, `PHENZIC000` and `PHENZIC001`, with each representing a type of token. It also includes a `constructor`, which is called when the contract is deployed. 
+* In this constructor, the sender is given `200` `PHENZIC000` tokens and `100` `PHENZIC001` tokens. 
+* Finally, the code includes a function, `uri()`, which returns a URI string for a given token ID. This URI string can be used to access the token's associated digital asset.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -497,7 +497,6 @@ Copy and paste the code above into your `MyToken` contract file.
 
 
 Using the smart contract above your, Your NFT will have all the required functionalities of an ERC1155 token standard.
-Here is a link for a more in-depth read on Creating an ERC1155 Standard Token.
 Next, you will learn how to deploy the ERC115 token, and how to deploy and mint to the Celo blockchain.
 
 # Deploying and Minting the Token Contract
@@ -573,13 +572,19 @@ After running the above codes on the hardhat console, you should have a similar 
 a. First, to call the `uri` function you will need to pass in the index of any token, and it will return the URL to the token on IPSF.
 Run the line `await token.uri(0)` or `await token.uri(1)`, and click enter. The result should be similar to the image below.
 
+![ury_function](https://user-images.githubusercontent.com/69092079/212209627-4e22ff9c-ef5c-47e3-aae6-3c423524577c.jpg)
+
 b. To check the balance of any of the tokens enter the lines of code `await token.balanceOf("0x9A11d5a704038BF7735dCE5Bbc71621da7052395", 0)`, for the first token or `await token.balanceOf("0x9A11d5a704038BF7735dCE5Bbc71621da7052395", 1)`, for the second token. And you should have a similar result to the image below.
 
+![balance_of](https://user-images.githubusercontent.com/69092079/212209653-50818645-6df6-499b-b6cf-41ff07ac3ed8.jpg)
 
 ***Note: you should pass in the address of the account you used to sign and deploy the contract, which is also the owner of the contract, and the token address, the `msg.sender` address***. 
 
 c. To send your tokens to any wallet address you can call the `safeTransferFrom` function, and pass in the following input. `from` address, `to` address, the `token_id` of the token you want to send, the `amount` you want to send and for the data put in the value `0x00`. For example `await token.safeTransferFrom("0x9A11d5a704038BF7735dCE5Bbc71621da7052395","0x8056c7C6B8a3a81bc4CbAf317973ce7f9Cbc747F",0,50,0x00)`. Or `await token.safeTransferFrom("0x9A11d5a704038BF7735dCE5Bbc71621da7052395","0x8056c7C6B8a3a81bc4CbAf317973ce7f9Cbc747F",1,50,"0x00")`
+
 d. You can check the remaining balance of the token and you’ll notice the reduction in the token amount. Run the command `await token.balanceOf("0x9A11d5a704038BF7735dCE5Bbc71621da7052395", 0)` or `await token.balanceOf("0x9A11d5a704038BF7735dCE5Bbc71621da7052395", 0`. You should have a result similar to the image below with the remaining balance after subtracting the amount you sent.
+
+
 ## Conclusion​ 
 
 In conclusion, creating, deploying, and minting ERC-1155 tokens on Celo using Hardhat is a relatively simple process. 
