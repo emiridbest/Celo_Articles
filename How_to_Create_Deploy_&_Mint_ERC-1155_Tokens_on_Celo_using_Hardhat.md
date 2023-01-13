@@ -601,8 +601,8 @@ is a Software Engineer and Technical writer always open to working on new ideas.
 Here are some other NFT-related tutorial articles you might be interested in:
 * [How to Build an NFT Collection on Celo](https://www.celosage.com/how-to-quickly-build-an-nft-collection-on-celo/)
 * [How to Deploy an ERC721 Smart Contract using Tatum API](https://www.celosage.com/how-to-deploy-an-erc721-smart-contract-using-the-tatum-api/)
-[How to Mint your ERC1155 token on Celo](https://www.celosage.com/how-to-mint-your-own-erc1155-nft-on-celo/)
-[How to redeploy your Ethereum Dapp on Celo with hardhat](https://www.celosage.com/how-to-re-deploy-your-ethereum-dapp-to-celo-with-hardhat/)
+* [How to Mint your ERC1155 token on Celo](https://www.celosage.com/how-to-mint-your-own-erc1155-nft-on-celo/)
+* [How to redeploy your Ethereum Dapp on Celo with hardhat](https://www.celosage.com/how-to-re-deploy-your-ethereum-dapp-to-celo-with-hardhat/)
 
 ## References
 Here are links to some video tutorials you might be interested in following along with while reading this tutorial:
