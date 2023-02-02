@@ -1,21 +1,21 @@
 ---
-title: Unit Testing with Truffle and Celo
-description: How to Write Unit Testing for Smart Contracts with Truffle
+title: Understanding the Decentralized Storage System
+description: This tutorial is a comprehensive and explanatory guide to understanding the decentralized storage system
 
 authors:
   - name: Mayowa Julius Ogungbola
     title: Software Engineer, Technical writer @Celo Foundation
     url: https://github.com/Julius170
     image_url: https://avatars.githubusercontent.com/u/69092079?s=400&u=f34c84ee03afb9a51b163652b750419e98ed7456&v=4
-tags: [celo,intermediate,celosage,truffle,smartcontract,solidity]
+tags: [celo,intermediate,celosage,]
 hide_table_of_contents: true
-slug: /tutorials/how-to-write-unit-testing-for-smart-contract-with-truffle
+slug: /tutorials/understanding the decentralized storage system
 ---
 
 ![header](https://user-images.githubusercontent.com/69092079/216377599-79056c47-ea78-467b-bf16-53c378bdcae0.png)
 
 
-## Introduction​
+# Introduction​
 Decentralized storage systems are becoming increasingly popular as a way to store data securely and efficiently. With the rise of blockchain technology, decentralized storage systems have become even more attractive due to their ability to provide secure, distributed storage solutions. One such system is Celo, which is a decentralized storage system built on the Ethereum blockchain. 
 
 Celo provides a secure, distributed storage solution that is both cost-effective and reliable. In this article, we will discuss the benefits of building a decentralized storage system on Celo and how to go about doing so. We will also explore the advantages of using Celo as a decentralized storage system and how it can be used to store data securely and efficiently.
