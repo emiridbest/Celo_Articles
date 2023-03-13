@@ -11,6 +11,9 @@ hide_table_of_contents: true
 slug: /tutorials/how-to-connect-to-a-node-on-the-celo-blockchain-using-docker
 ---
 
+![how-to-connect-to-a-node-on-celo-blockchain-using-docker](https://user-images.githubusercontent.com/69092079/224585198-b09ccdd8-a535-4bad-98f3-b98c382ed714.png)
+
+
 ## Introduction
 Celo is an open-source blockchain platform that enables fast, secure, and low-
 cost financial transactions. In this article, we will discuss how to set up a node on the Celo network, which is a crucial step to participate in the network as a validator or observer. 
